@@ -14,3 +14,4 @@ This assignment will teach you the scenario where you need to pick up where some
 7. Commit and push your bug fix to the branch `bug-fix-<your-name>`
 Go to Github and send a pull request to the master branch
  
+   
