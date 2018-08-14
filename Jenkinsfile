@@ -18,6 +18,7 @@ node {
     stage('checkout source') {
         // when running in multi-branch job, one must issue this command
         checkout scm
+        setBuildStatus("Pending", "pending");
     }
     
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
@@ -48,7 +49,7 @@ node {
             timeout(time: 120, unit: 'SECONDS') {
                 rc = sh returnStatus: true, script: "${toolbelt}/sfdx force:apex:test:run --testlevel RunLocalTests --outputdir ${RUN_ARTIFACT_DIR} --resultformat tap --wait --targetusername ${SFDC_USERNAME}"
                 if (rc != 0) {
-                    setBuildStatus("Build failed", "FAILURE");
+                    setBuildStatus("Build failed", "failure");
                     error 'apex test run failed'
                 }
             }
@@ -56,7 +57,7 @@ node {
 
         stage('collect results') {
             junit keepLongStdio: true, testResults: 'tests/**/*-junit.xml'
-            setBuildStatus("Build succeeded", "SUCCESS");
+            setBuildStatus("Build succeeded", "success");
         }
     }
 }
