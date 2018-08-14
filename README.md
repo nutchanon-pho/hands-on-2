@@ -13,3 +13,4 @@ This assignment will teach you the scenario where you need to pick up where some
 6. To validate your result you can type `sfdx force:apex:test:run -l RunAllTestsInOrg -c -r human -w 1000` to run the test class.
 7. Commit and push your bug fix to the branch `bug-fix-<your-name>`
 Go to Github and send a pull request to the master branch
+ 
