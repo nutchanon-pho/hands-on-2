@@ -18,7 +18,7 @@ node {
     stage('checkout source') {
         // when running in multi-branch job, one must issue this command
         checkout scm
-        setBuildStatus("Pending", "pending");
+        setBuildStatus("Pending", "PENDING");
     }
     
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
