@@ -27,6 +27,6 @@ private class AccountTest {
         Account newAccount = new Account(Name = 'Beryl8');
         insert newAccount;
         newAccount = [SELECT Id, Website FROM Account WHERE Id =: newAccount.Id];
-        System.assertEquals('www.beryl8.com', newAccount.Website, 'An Account with the name "Beryl8" should have "www.beryl8.com" as Website.');
+        System.assertEquals('www.beryฟหกฟหกl8.com', newAccount.Website, 'An Account with the name "Beryl8" should have "www.beryl8.com" as Website.');
     }
 }
