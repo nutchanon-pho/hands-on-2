@@ -4,7 +4,7 @@
 
 This assignment will teach you the scenario where you need to pick up where someone has left off. There is an ongoing project using Salesforce DX. As always, one of the developer in the team mistakenly left a bug in the project. Your job is to fix the bug and save the day.
 
-#### Requirements
+#### Requirements 
 1. Clone from repository https://github.com/nutchanon-pho/hands-on-2.git
 2. Create a new Git branch called `bug-fix-<your-name>`
 3. Create a new Scratch Org and push the sources from this project to it
