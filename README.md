@@ -11,7 +11,7 @@ This assignment will teach you the scenario where you need to pick up where some
 4. Try creating a new Account with the name `Beryl8` and see if the `Website` field is `www.beryl8.com`
 5. You will see that it is not. Your job is to investigate and fix this bug.
 6. To validate your result you can type `sfdx force:apex:test:run -l RunAllTestsInOrg -c -r human -w 1000` to run the test class.
-7. Commit and push your bug fix to the branch `bug-fix-<your-name>`
+7. Commit and push your bug fix to the branch `bug-fix-<your-cname>`
 Go to Github and send a pull request to the master branch
  
    
