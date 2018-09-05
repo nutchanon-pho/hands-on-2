@@ -7,7 +7,7 @@ This assignment will teach you the scenario where you need to pick up where some
 #### Requirements
 1. Clone from repository https://github.com/nutchanon-pho/hands-on-2.git
 2. Create a new Git branch called `bug-fix-<your-name>`
-3. Create a new Scratch Org and push the sources from this project to it
+3. Create a new Scratch Org and puszxch the sources from this project to it
 4. Try creating a new Account with the name `Beryl8` and see if the `Website` field is `www.beryl8.com`
 5. You will see that it is not. Your job is to investigate and fix this bug.
 6. To validate your result you can type `sfdx force:apex:test:run -l RunAllTestsInOrg -c -r human -w 1000` to run the test class.
